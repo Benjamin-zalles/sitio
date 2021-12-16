@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatur</title>
+    <link rel="stylesheet" href="../css/estilo-menu.css" />
+    <link rel="stylesheet" href="../css/estilos-productos.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b1a91cbac7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- incono del encabezado -->
+    <link rel="icon" type="imagen/jpg" href="../img/logo-creatur.svg" />
+    <!-- cierre encabezado -->
+    <script src="https://kit.fontawesome.com/b1a91cbac7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/iniciar-sesion.css">
+    <link rel="stylesheet" href="../css/ayuda.css">
+
+
+  </head>
+
+  <body>
+
+    <!-- INICIO DE SESIÓN -->
+
+    <div class="padre" id="padre">
+        <div class="login-container" id="overlay">
+           
+            <div class="login-info-container" id="popup">
+                <h1 class="title"> iniciar sesión</h1>
+                
+                <div class="social-login">
+                    
+                    <div class="social-login-element">
+                        <img src="../img-login/google.svg" alt="google-jpg">
+                        <spam>google</spam>
+                    </div>
+                    
+                    <div class="social-login-element">
+                        <img src="../img-login/facebook.svg" alt="facebook-jpg">
+                        <spam>facebook</spam>
+                    </div>
+                
+                </div>
+              
+                
+                <form class="inputs-container">
+                    <input class= "input" type="text" placeholder="Username">
+                    <input class= "input" type="password" placeholder="Password">
+                    <p>¿Olvidó su contraseña? <span class="span"> clip aquí</span></p>
+                    <button class="btn-s">iniciar sesión</button>
+                    <p>¿No tienes una cuenta? <span class="span">registrarse</span></p>
+                </form>
+                
+            </div>
+            <div class="popup-img" id="popup-img">
+                <img class="image-container" src="../img-login/casa2.jpg" alt="login">
+                <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACABA INICIO DE SESIÓN -->
+
+    <header>
+      <div class="icon__menu" id="btn-open">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <div class="menu-header">
+        <!--Boton-->
+        <div class="boton-modal">
+          <label for="btn-modal" class="carrito">
+                  <i class="bx bx-cart"></i>
+          </label>
+      </div>
+      <!--Fin de Boton-->
+      
+
+        <a
+          href="https://www.instagram.com/?hl=es"
+          target="_blank"
+          class="red-social"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/Creatur-103796545363660/"
+          target="_blank"
+          class="red-social"
+        >
+          <i class="bx bxl-facebook-circle"></i>
+        </a>
+
+        <a href="#" id="user-icon-open">Iniciar Sesión</a>
+        <a href="#">Registrarse</a>
+      </div>
+
+       <!--Ventana Modal-->
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            
+        <h1 class="text-center">MI CARRITO</h1>
+        
+        <div class="row-item">
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Producto</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6 class="text">Precio</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Cantidad</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- ? EMPEZAR A COMPRAR ARTÍCULOS DEL CARRITO -->
+        <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+         <!-- ? FINALIZAR ARTÍCULOS DEL CARRITO DE COMPRA -->
+
+            <!--  INICIO TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total">
+                      <div class="total">
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <p class="mb-0">TOTAL</p>
+                    </div>
+                
+                        
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN TOTAL -->
+
+
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+<!--Fin de Ventana Modal-->
+
+    </header>
+
+
+
+    <!-- Inicio de side menu -->
+    <div class="menu__side" id="menu_side">
+      <div class="logo-creatur">
+        <a href="../index.html">
+          <div class="option">
+            <img src="../img/logo-creatur.svg" alt="" />
+            <h4 class="creatur">Creatur</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="option__menu">
+        <!-- Icono de inicio -->
+        <a href="../index.html">
+          <div class="option">
+            <i class="bx bx-home"></i>
+            <h4>Inicio</h4>
+          </div>
+        </a>
+
+        <!-- Icono de productos -->
+        <a href="productos.html" class="select">
+          <div class="option">
+            <i class="bx bx-store"></i>
+            <h4>Productos</h4>
+          </div>
+        </a>
+
+        <!-- Icono de servicios -->
+        <a href="servicios.html">
+          <div class="option">
+            <i class="bx bx-task"></i>
+            <h4>Servicios</h4>
+          </div>
+        </a>
+
+        <a href="portafolio.html">
+          <div class="option">
+            <i class="bx bx-briefcase-alt"></i>
+            <h4>Portafolio</h4>
+          </div>
+        </a>
+
+        <a href="nosotros.html">
+          <div class="option">
+            <i class="bx bxs-group"></i>
+            <h4>Nosotros</h4>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="option ayuda" id="abrir-ayuda">
+            <i class="bx bx-help-circle"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Fin de side menu -->
+
+    <!-- INICIO BOT DE AYUDA -->
+
+    <div class="ayuda2" id="ayuda2">
+
+        <div class="header-ayuda">
+            <h3>CREATUR</h3>
+            <a href="#" class="cerrar-ayuda" id="cerrar-ayuda">
+                <i class='bx bx-x'></i>
+            </a>
+        </div>
+
+        <div class="comentarios-ayuda">
+            <h5>Creatur Bot.</h5>
+            <p class="cm-1">Hola, bienvenido a Creatur</p>
+            <p class="cm-2">En estos momentos nuestro Bot no esta en función.</p>
+            <p class="cm-3">Muy pronto estara disponible. 🙋‍♂️</p>
+        </div>
+
+        <div class="comentario-ayuda">
+            <input type="text" placeholder="Escriba su pregunta aquí">
+        </div>
+
+    </div>
+
+    <!-- FIN BOT DE AYUDA -->
+    
+
+
+
+    <!-- !Inicio filtro de clasificación de productos -->
+
+    <div class="title-productos">
+      <h1>Eliga su Producto</h1>
+    </div>
+
+    <div class="content">
+      <div class="cuerpo">
+        <input type="radio" id="todos" name="categories" value="todos" checked />
+        <input
+          type="radio"
+          id="descuentos"
+          name="categories"
+          value="descuentos"
+        />
+        <input type="radio" id="gratis" name="categories" value="gratis" />
+        <input type="radio" id="mockups" name="categories" value="mockups" />
+        <input type="radio" id="modelo" name="categories" value="modelo" />
+
+        <ol class="filters">
+          <li>
+            <label for="modelo">Modelos3D</label>
+          </li>
+          <li>
+            <label for="mockups">Mockups</label>
+          </li>
+          <li>
+            <label for="gratis">Gratuitos</label>
+          </li>
+          <li>
+            <label for="descuentos">Descuentos</label>
+          </li>
+          <li>
+            <label for="todos">Todos</label>
+          </li>
+        </ol>
+
+        <!-- !Inicio filtro de clasificación de productos -->
+
+
+        
+
+        <!-- Inicio cards compras -->
+        <div class="items">
+            
+            <div class="item shadow mb-4" data-category="gratis">
+              <a href="paginas-productos/arbolesOtoño.html">
+                  <img class="item-image" src="../img/img-productos/1.arboles/arboles-1.png" />
+              </a>
+              <h3 class="item-title">ÁRBOLES OTOÑALES</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">9.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="item shadow mb-4" data-category="gratis">
+                <a href="paginas-productos/contenedor.html">
+                    <img class="item-image" src="../img/img-productos/container.jpg" />
+                </a>
+              <h3 class="item-title">CONTENEDOR</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">0.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>GRATIS</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+        
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/casaCampo.html">
+                    <img class="item-image" src="../img/img-productos/casa-campo.jpg" />
+                </a>
+              <h3 class="item-title"> CASA EN EL CAMPO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">5.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+       
+            <div class="item shadow mb-4" data-category="gratis">
+                <a href="paginas-productos/arbolOtoño.html">
+                    <img class="item-image" src="../img/img-productos/otoño.jpg" />
+                </a>
+              <h3 class="item-title">ÁRBOL DE OTOÑO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">0.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>GRATIS</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+      
+
+       
+            <div class="item shadow mb-4" data-category="mockups">
+                <a href="paginas-productos/packaging.html">
+                    <img class="item-image" src="../img/img-productos/packaging.jpg" />
+                </a>
+              <h3 class="item-title">PACKAGING</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">30.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+         
+       
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/volcan.html">
+                 <img class="item-image" src="../img/img-productos/volcan.jpg" />
+                </a>
+              <h3 class="item-title">VOLCÁN</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">3.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="item shadow mb-4" data-category="descuentos">
+                <a href="paginas-productos/personajeTraje.html">
+                    <img class="item-image" src="../img/img-productos/persona-traje.jpg" />
+                </a>
+              <h3 class="item-title">PERSONAJE DE TRAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">6.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>76% Dto $6.00USD</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+     
+         
+            <div class="item shadow mb-4" data-category="descuentos">
+                <a href="paginas-productos/pollito.html">
+                    <img class="item-image" src="../img/img-productos/pollito.jpg" />
+                </a>
+              <h3 class="item-title">POLLITO REVELDE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">5.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  <P>76% Dto $5.00USD</P>
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+       
+            <div class="item shadow mb-4" data-category="otros">
+                <a href="paginas-productos/personaje.html">
+                    <img class="item-image" src="../img/img-productos/personaje.jpg" />
+                </a>
+              <h3 class="item-title">PERSONAJE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">4.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="item shadow mb-4" data-category="mockups">
+                <a href="paginas-productos/lata.html">
+                    <img class="item-image" src="../img/img-productos/lata.jpg" />
+                </a>
+              <h3 class="item-title">LATA DE SODA</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">2.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+        
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/cuartoGamer.html">
+                    <img class="item-image" src="../img/img-productos/cuarto-gamer.jpg" />
+                </a>
+              <h3 class="item-title">CUARTO GAMER</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO 
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+       
+       
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/guerrero.html">
+                    <img class="item-image" src="../img/img-productos/guerrero.jpg" />
+                </a>
+              <h3 class="item-title">GUERRERO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">7.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+      
+            <div class="item shadow mb-4" data-category="mockups">
+                <a href="paginas-productos/mockup.html">
+                    <img class="item-image" src="../img/img-productos/mockup.jpg" />
+                </a>
+              <h3 class="item-title">MOCKUP</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="descuentos">
+                <a href="paginas-productos/lagarto.html">
+                    <img class="item-image" src="../img/img-productos/lagarto.jpg" />
+                </a>
+              <h3 class="item-title">LAGARTO DEL PANTANO</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item shadow mb-4" data-category="modelo">
+                <a href="paginas-productos/calavera.html">
+                    <img class="item-image" src="../img/img-productos/calavera.jpg" />
+                </a>
+              <h3 class="item-title">ISLA CALAVERA</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item shadow mb-4" data-category="descuentos">
+                <a href="paginas-productos/house.html">
+                    <img class="item-image" src="../img/img-productos/16.house/house-1.png" />
+                </a>
+              <h3 class="item-title">HOUSE</h3>
+
+              <div class="item-details">
+                <h4 class="item-price">1.00€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+                <div class="estrella">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          
+            
+        
+
+
+
+
+          <!-- <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Pokemon Verde</h3>
+
+              <img class="item-image" src="./img/pokemon-verde.jpg" />
+
+              <div class="item-details">
+                <h4 class="item-price">9.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Pokemon Plata</h3>
+
+              <img class="item-image" src="./img/pokemon-plata.jpg" />
+
+              <div class="item-details">
+                <h4 class="item-price">19.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Pokemon Oro</h3>
+
+              <img class="item-image" src="./img/pokemon-oro.jpg" />
+              <div class="item-details">
+                <h4 class="item-price">19.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="item shadow mb-4">
+              <h3 class="item-title">Sonic</h3>
+
+              <img class="item-image" src="./img/sonic.jpg" />
+              <div class="item-details">
+                <h4 class="item-price">6.99€</h4>
+                <button class="item-button btn btn-primary addToCart">
+                  AÑADIR AL CARRITO
+                </button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      
+    <!-- END SECTION STORE -->
+
+
+
+
+    <!-- START SECTION SHOPPING CART -->
+    <!-- <section class="shopping-cart">
+      <div class="container">
+        <h1 class="text-center">MI CARRITO</h1>
+        
+        <div class="row-item">
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Producto</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6 class="text-truncate">Precio</h6>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="shopping-cart-header">
+              <h6>Cantidad</h6>
+            </div>
+          </div>
+        </div> -->
+        <!-- ? START SHOPPING CART ITEMS -->
+        <div class="shopping-cart-items shoppingCartItemsContainer"></div>
+
+        <!-- MOCKUP EXAMPLE (DELETE) -->
+        <!-- <div class="shoppingCartItem">
+            <div class="flex">
+                <div class="shopping-cart-item">
+                    <img src='./img/sonic.jpg' class="shopping-cart-image">
+                    
+                </div>
+            </div>
+            <div class="flex">
+                <div class="shopping-cart-item">
+                    <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Sonic
+                    </h6>
+                </div>
+            </div>
+
+
+            <div class="flex">
+                <div class="shopping-cart-price">
+                    <p class="item-price mb-0 shoppingCartItemPrice">6.99€</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div
+                    class="shopping-cart-quantity">
+                    <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                        value="1">
+                    <button class="btn btn-danger buttonDelete" type="button"><i class='bx bxs-trash'></i></button>
+                </div>
+            </div>
+        </div> -->
+        <!-- END MOCKUP EXAMPLE -->
+        <!-- ? END SHOPPING CART ITEMS -->
+
+
+        
+        <!-- START TOTAL -->
+        <!-- <div class="row-TOTAL">
+          <div class="col-12">
+            <div class="shopping-cart-total d-flex align-items-center">
+                <div class="total">
+                   
+                    <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                    <p class="mb-0">TOTAL</p>
+                </div>
+            
+              <div
+                class="toast ml-auto bg-info"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+                data-delay="2000"
+              >
+                <div class="toast-header">
+                  <span>🙋</span>
+                  <strong class="mr-auto ml-1 text-secondary"
+                    >Elemento en el carrito</strong
+                  >
+                  <button
+                    type="button"
+                    class="ml-2 mb-1 close"
+                    data-dismiss="toast"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="toast-body text-white">
+                  Se aumentó correctamente la cantidad
+                </div>
+              </div>
+              <button
+                class="btn btn-success ml-auto comprarButton"
+                type="button"
+                data-toggle="modal"
+                data-target="#comprarModal">
+                COMPRAR
+              </button>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- END TOTAL -->
+
+        <!-- START MODAL COMPRA -->
+        <!--    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- END MODAL COMPRA -->
+
+       
+
+
+
+
+
+    
+      </div>
+    </div>
+    
+
+
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- END SECTION SHOPPING CART -->
+
+    <!-- Fin cards compras -->
+
+
+
+
+     <!-- FOOTER INICIO -->
+     <div class="footer">
+    
+      
+    
+      <div class="col">
+        <h1 class="copy">©Creatur 2021 </h1>
+      </div>
+
+      <div class="col">
+        <h1>SECCIÓNES</h1>
+        <ul>
+          <li>Descargas gratis</li>
+          <li>Low poly</li>
+          <li>voxel art</li>
+          <li>Diseño 3d</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1>INFORMACIÓN</h1>
+        <ul>
+          <li>Términos de servicio</li>
+          <li>Política de privacidad</li>
+          <li>Promociones</li>
+          <li>Ayuda</li>
+        </ul>
+      </div>
+
+      <div class="col social">
+        
+        <ul>
+          <li>
+            <i class='bx bxl-facebook-circle'></i>
+          </li>
+          <li>
+            <i class='bx bxl-instagram-alt' ></i>
+          </li>
+          <li>
+            <i class='bx bxl-github'></i>
+          </li>
+        </ul>
+      </div>
+    <!-- <div class="clearfix"></div> -->
+    
+    </div>
+    <!-- FIN OF FOOTER -->
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/tienda.js"></script>
+    <script src="../js/iniciar-sesion.js"></script>
+    <script src="../js/ayuda.js"></script>
+  </body>
+</html>

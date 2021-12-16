@@ -1,0 +1,256 @@
+:root {
+  /* variables para tipografias */
+  --rosado-font: #e25d79;
+  --blanco-font: #e8e8e8;
+  --azulOscuro-font: #17202d;
+
+  /* Variables para el background */
+  --fondo-rosado: #e25d79;
+  --fondo-oscuro: #17202d;
+  --fondo-blanco: #e8e8e8;
+
+  /* Variables para botones*/
+  --btn-rosado: #e25d79;
+  --btn-blanco: #e8e8e8;
+  --btn-degradado: linear-gradient(106.57deg, #d4355b 0%, #733570 100%);
+
+  /* variables para iconos */
+
+  --icon-rosado: #e25d79;
+  --icon-blanco: #e8e8e8;
+}
+
+/* titulo de servicios */
+.titleh1 {
+  /* border: solid 1px red; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: center;
+  gap: 20px;
+}
+
+.titleh1 h2 {
+  font-size: 50px;
+  color: var(--rosado-font);
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+  .titleh1 h2 {
+    width: 40%;
+    font-size: 30px;
+    color: var(--rosado-font);
+    justify-self: center;
+  }
+}
+
+/* contenedor de servicios */
+.content {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
+.cuerpo {
+  padding: 0 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+  grid-auto-flow: dense;
+  /* border: 2px solid red; */
+}
+
+.card {
+  background: var(--fondo-blanco);
+  height: 500px;
+  border-radius: 15px;
+  padding: 10px 10px;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  /* transform: scale(1,1); */
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-cuerpo {
+  margin-top: 10px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 5px solid red; */
+
+  gap: 10px;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card.fit img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card.fit.absolute img {
+  object-fit: cover;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  display:flex;
+  justify-content:center;  
+}
+
+/* STYLES SPECIFIC TO FOOTER  */
+
+.footer {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.footer .col {
+  width: 250px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+
+}
+
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #ffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #a3a2a2;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 10px !important;
+  
+}
+
+.social ul li i{
+  font-size: 55px;
+  color: var(--icon-rosado);
+}
+.social ul li i:hover{
+  color: #e66d87;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+/* .clearfix {
+  clear: both;
+} */
+
+/* !responsive */
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+/* !responsive */
+
+

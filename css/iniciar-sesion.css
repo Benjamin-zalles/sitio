@@ -1,0 +1,348 @@
+:root{
+    --login-bg: #ffffff;
+    --title-bg: #17202D;
+    --button-bg: #17202D;
+    --light-pink: #E25D79;
+    --image-bg: #eadbff;
+}
+
+
+.padre {
+    background: rgba(0, 0, 0, 0.623);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+
+
+.login-container{
+    height: 40em;
+    width: 60em;
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.login-info-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: var(--login-bg);
+    opacity: 0;
+}
+
+.btn-cerrar-popup{
+    color: var(--login-bg);
+    position: absolute;
+    font-size: 25px;
+    margin-left: -25px;
+    /* transition: .3s ease all; */
+}
+
+.btn-cerrar-popup:hover {
+    color: #17202D;
+}
+
+
+.popup-img{
+    width: 50%;
+    padding: rem;
+    background-color: var(--image-bg);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.popup-img .image-container {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    visibility: visible;
+}
+
+
+.title{
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--title-bg);
+    opacity: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.social-login{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+
+.social-login-element{
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--button-bg);
+}
+.social-login-element img{
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0%;
+    left: -0.625rem;
+}
+.social-login-element:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.login-info-container > p{
+    font-size: 1.25em;
+    margin-top: 1.5em;
+}
+.inputs-container{
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+}
+.input, .btn-s{
+    width: 90%;
+    height: 3.125rem;
+    font-size: 1em;
+    background: rgb(235, 235, 235);
+}
+.input{
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input:hover{
+    border: 2px solid var(--button-bg);
+}
+
+.btn-s{
+    width:  80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-s:hover {
+    background: var(--light-pink);
+}
+
+.inputs-container p{
+    margin: 0;
+}
+.span{
+    color: var(--light-pink);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-container .active {opacity: 1;}
+.login-container .active .title { animation: entradaTitulo .8s ease .5s forwards; }
+.login-container .active .social-login { animation: entradaSubtitulo .8s ease .5s forwards; }
+
+
+.login-container .active .inputs-container { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+
+
+
+
+
+
+.footer{
+    display:flex;
+    justify-content:center;  
+  }
+  
+  /* STYLES SPECIFIC TO FOOTER  */
+  
+  .footer {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  
+  .footer .col {
+    width: 250px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+  
+  }
+  
+  
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: #ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #a3a2a2;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  
+  .social ul li {
+    display: inline-block;
+    padding-right: 10px !important;
+    
+  }
+  
+  .social ul li i{
+    font-size: 55px;
+    color: var(--icon-rosado);
+  }
+  .social ul li i:hover{
+    color: #e66d87;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  /* .clearfix {
+    clear: both;
+  } */
+  
+  /* !responsive */
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+  /* !responsive */
+  

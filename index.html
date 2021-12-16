@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatur</title>
+    <link rel="stylesheet" href="css/estilo-menu.css" />
+    <link rel="stylesheet" href="css/estilos-inicio.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- incono del encabezado -->
+    <link rel="icon" type="imagen/jpg" href="../img/logo-creatur.svg" />
+    <!-- cierre encabezado -->
+
+    <link rel="stylesheet" href="css/iniciar-sesion.css">
+    <script src="https://kit.fontawesome.com/b1a91cbac7.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css"
+  />
+  <link rel="stylesheet" href="css/ayuda.css">
+
+
+  </head>
+
+  <body>
+
+    <!-- INICIO DE SESIÓN -->
+
+    <div class="padre" id="padre">
+        <div class="login-container" id="overlay">
+           
+            <div class="login-info-container" id="popup">
+                <h1 class="title"> iniciar sesión</h1>
+                
+                <div class="social-login">
+                    
+                    <div class="social-login-element">
+                        <img src="img-login/google.svg" alt="google-jpg">
+                        <spam>google</spam>
+                    </div>
+                    
+                    <div class="social-login-element">
+                        <img src="img-login/facebook.svg" alt="facebook-jpg">
+                        <spam>facebook</spam>
+                    </div>
+                
+                </div>
+              
+                
+                <form class="inputs-container">
+                    <input class= "input" type="text" placeholder="Username">
+                    <input class= "input" type="password" placeholder="Password">
+                    <p>¿Olvidó su contraseña? <span class="span"> clip aquí</span></p>
+                    <button class="btn-s">iniciar sesión</button>
+                    <p>¿No tienes una cuenta? <span class="span">registrarse</span></p>
+                </form>
+                
+            </div>
+            <div class="popup-img" id="popup-img">
+                <img class="image-container" src="img-login/casa2.jpg" alt="login">
+                <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACABA INICIO DE SESIÓN -->
+    
+    <header>
+      <div class="icon__menu" id="btn-open">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <div class="menu-header">
+        <a href="#" class="carrito">
+          <i class="bx bx-cart"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/?hl=es"
+          target="_blank"
+          class="red-social"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/Creatur-103796545363660/"
+          target="_blank"
+          class="red-social"
+        >
+          <i class="bx bxl-facebook-circle"></i>
+        </a>
+
+        <a href="#" id="user-icon-open">Iniciar Sesión</a>
+        <a href="#">Registrarse</a>
+      </div>
+    </header>
+
+    <!-- Inicio de side menu -->
+
+    <div class="menu__side" id="menu_side">
+      <div class="logo-creatur">
+        <a href="#">
+          <div class="option">
+            <img src="img/logo-creatur.svg" alt="" />
+            <h4 class="creatur">Creatur</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="option__menu">
+        <!-- Icono de inicio -->
+        <a href="#" class="select">
+          <div class="option">
+            <i class="bx bx-home"></i>
+            <h4>Inicio</h4>
+          </div>
+        </a>
+
+        <!-- Icono de productos -->
+        <a href="html/productos.html">
+          <div class="option">
+            <i class="bx bx-store"></i>
+            <h4>Productos</h4>
+          </div>
+        </a>
+
+        <!-- Icono de servicios -->
+        <a href="html/servicios.html">
+          <div class="option">
+            <i class="bx bx-task"></i>
+            <h4>Servicios</h4>
+          </div>
+        </a>
+
+        <a href="html/portafolio.html">
+          <div class="option">
+            <i class="bx bx-briefcase-alt"></i>
+            <h4>Portafolio</h4>
+          </div>
+        </a>
+
+        <a href="html/nosotros.html">
+          <div class="option">
+            <i class="bx bxs-group"></i>
+            <h4>Nosotros</h4>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="option ayuda" id="abrir-ayuda">
+            <i class="bx bx-help-circle"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Fin de side menu -->
+
+    <!-- INICIO BOT DE AYUDA -->
+
+    <div class="ayuda2" id="ayuda2">
+
+        <div class="header-ayuda">
+            <h3>CREATUR</h3>
+            <a href="#" class="cerrar-ayuda" id="cerrar-ayuda">
+                <i class='bx bx-x'></i>
+            </a>
+        </div>
+
+        <div class="comentarios-ayuda">
+            <h5>Creatur Bot.</h5>
+            <p class="cm-1">Hola, bienvenido a Creatur</p>
+            <p class="cm-2">En estos momentos nuestro Bot no esta en función.</p>
+            <p class="cm-3">Muy pronto estara disponible. 🙋‍♂️</p>
+        </div>
+
+        <div class="comentario-ayuda">
+            <input type="text" placeholder="Escriba su pregunta aquí">
+        </div>
+
+    </div>
+
+    <!-- FIN BOT DE AYUDA -->
+
+
+
+    <div class="cuerpo">
+      <div class="img-inicio">
+        <img src="img/img-inicio/volcan.png" alt="" />
+      </div>
+
+      <div class="text">
+        <h1>Creatur</h1>
+        <p class="desktop">
+          Somos una empresa innovadora que crea, diseño web y diseño 3d que
+          tiene ganas de colaborar contigo. Tanto en tu proyecto, como en las
+          mejoras que desees. Y podrás encontrar aquí todo tipo de relacion con
+          diseño gráfico, diseño web y 3d.
+        </p>
+
+        <p class="movile">
+          Aquí podrás encontrar aquí todo tipo de relacion con diseño gráfico,
+          diseño web y 3d.
+        </p>
+
+        <h3>PRODUCTOS EN DESCUENTO</h3>
+        <a href="html/productos.html">Ver más > </a>
+
+        <div class="img-1">
+          <img src="img/img-productos/14.lagarto/lagartov (1).png" alt="Bosque" />
+        </div>
+        <div class="img-2">
+          <img src="img/img-productos/3.casa-en-el campo/casa-campo-2.png" alt="Bosque" />
+        </div>
+
+    
+      </div>
+
+      <div class="frase">
+        <p>“El secreto de tomar la delantera es empezar”</p>
+        <h4>Mark Twain</h4>
+      </div>
+
+      <hr />
+
+      <div class="conoce">
+          <div class="conoce-letras">
+              <h2>
+                  Conoce sobre, nuestros desarrollos para la <span>web</span> y diseños
+                  para el ambito de <span>videojuegos</span>, <span>animación</span>,
+                  etc.
+             </h2>
+            </div>
+        <div class="imagen-doble" id="imagen-doble">
+          <img src="img/img-inicio/robot.jpg" />
+          <img src="img/img-inicio/robot2.jpg" />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="tecnologias">
+        <h2>Tecnologías y herramientas que manejamos</h2>
+        <p>
+          Aquí te daremos la bienvenida y, con paciencia, te mostramos las
+          herramientas y tecnologías que utilizamos en creatur sobre el
+          desarrollo y la creación de nuestros productos.
+        </p>
+      </div>
+
+
+
+      <!-- inicio de las cards -->
+      <div class="container__card">
+
+        
+        <!-- card uno -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-javascript"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>JavaScript</h2>
+            <p>
+                JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web.
+            </p>
+          </div>
+        </div>
+        <!-- fin card uno -->
+
+        <!-- card dos -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-html5"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>HTML</h2>
+            <p>
+                "HyperText Markup Language" Es el componente más básico de la Web. Define el significado y la estructura del contenido web.
+            </p>
+          </div>
+        </div>
+
+        <!-- card tres -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-css3"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>CSS</h2>
+            <p>
+                "Cascading Style Sheets". Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web.
+
+            </p>
+          </div>
+        </div>
+
+        <!-- card cuatro -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-wordpress"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>Wordpress</h2>
+            <p>
+                WordPress es un sistema de gestión de contenidos (CMS) que permite crear y mantener un blog u otro tipo de web.
+
+            </p>
+          </div>
+        </div>
+
+        <!-- card cinco -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-wix"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>Wix</h2>
+            <p>
+                WIx es una plataforma de desarrollo web que basa su sistema en la nube, en la cual puedes hacer tu sitio web sin tener conocimientos profundos en programación.
+            </p>
+          </div>
+        </div>
+
+        <!-- card seis -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-visual-studio"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>VS Code</h2>
+            <p>
+                Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis.
+            </p>
+          </div>
+        </div>
+
+        <!-- card siete -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <img src="img/photoshop.svg" alt="photoshop">
+          </div>
+          <div class="back back__uno">
+            <h2>Photoshop</h2>
+            <p>
+                La más conocida herramienta de edición de imágenes y fotografía, un programa que se utiliza en PC para retocar fotos y hacer ilustraciones.
+            </p>
+          </div>
+        </div>
+
+        <!-- card ocho -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <img src="img/illustrator.svg" alt="illustrator">
+          </div>
+          <div class="back back__uno">
+            <h2>Illustrator</h2>
+            <p>
+                Es un editor de gráficos vectoriales sirve para, ilustración y el diseño gráfico.
+            </p>
+          </div>
+        </div>
+
+        <!-- card nueve -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-unity"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>Unity</h2>
+            <p>
+                Es un motor de videojuegos o  game engine el cual tiene una serie de rutinas de programación que permiten el diseño, la creación y el funcionamiento de un entorno interactivo; es decir, de un videojuego.
+            </p>
+          </div>
+        </div>
+
+        <!-- card diez -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-blender"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>Blender</h2>
+            <p>
+                Es un programa informático multiplataforma, dedicado especialmente al modelado, iluminación, renderizado, la animación y creación de gráficos tridimensionales.
+            </p>
+          </div>
+        </div>
+
+        <!-- card once -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <i class="bx bxl-figma"></i>
+          </div>
+          <div class="back back__uno">
+            <h2>Figma</h2>
+            <p>
+                Figma es una aplicación para diseñar interfaces que se ejecuta tanto en el navegador y escritorio, que tiene como opción el trabajo colaborativo.
+            </p>
+          </div>
+        </div>
+
+        <!-- card doce -->
+        <div class="card card__uno">
+          <div class="front front__uno">
+            <img src="img/magicavolxel.svg" alt="magica voxel" class="magica">
+          </div>
+          <div class="back back__uno">
+            <h2>Magica Voxel</h2>
+            <p>
+                Una fantástica aplicación para crear imágenes 3D a base de bloques  al estilo de "Minecraft".
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- fin de las cards -->
+
+    </div>
+
+
+
+ <!-- FOOTER INICIO -->
+     <div class="footer">
+    
+      
+    
+      <div class="col">
+        <h1 class="copy">©Creatur 2021 </h1>
+      </div>
+
+      <div class="col">
+        <h1>SECCIÓNES</h1>
+        <ul>
+          <li>Descargas gratis</li>
+          <li>Low poly</li>
+          <li>voxel art</li>
+          <li>Diseño 3d</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1>INFORMACIÓN</h1>
+        <ul>
+          <li>Términos de servicio</li>
+          <li>Política de privacidad</li>
+          <li>Promociones</li>
+          <li>Ayuda</li>
+        </ul>
+      </div>
+
+      <div class="col social">
+        
+        <ul>
+          <li>
+            <i class='bx bxl-facebook-circle'></i>
+          </li>
+          <li>
+            <i class='bx bxl-instagram-alt' ></i>
+          </li>
+          <li>
+            <i class='bx bxl-github'></i>
+          </li>
+        </ul>
+      </div>
+    <!-- <div class="clearfix"></div> -->
+    
+    </div>
+    <!-- FIN OF FOOTER -->
+
+    
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
+
+    <script src="js/imagen-doble.js"></script>
+
+    <script src="js/iniciar-sesion.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/ayuda.js"></script>
+
+  </body>
+</html>

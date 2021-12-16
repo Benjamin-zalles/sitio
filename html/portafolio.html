@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creatur</title>
+    <link rel="stylesheet" href="../css/estilo-menu.css" />
+    <link rel="stylesheet" href="../css/estilos-portafolio.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- incono del encabezado -->
+    <link rel="icon" type="imagen/jpg" href="../img/logo-creatur.svg" />
+    <!-- cierre encabezado -->
+
+    <link rel='stylesheet' href='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css'>
+   <link rel="stylesheet" href="../css/ayuda.css">
+   <script src="https://kit.fontawesome.com/b1a91cbac7.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../css/iniciar-sesion.css">
+  </head>
+
+  <body>
+
+    <!-- INICIO DE SESIÓN -->
+
+    <div class="padre" id="padre">
+        <div class="login-container" id="overlay">
+           
+            <div class="login-info-container" id="popup">
+                <h1 class="title"> iniciar sesión</h1>
+                
+                <div class="social-login">
+                    
+                    <div class="social-login-element">
+                        <img src="../img-login/google.svg" alt="google-jpg">
+                        <spam>google</spam>
+                    </div>
+                    
+                    <div class="social-login-element">
+                        <img src="../img-login/facebook.svg" alt="facebook-jpg">
+                        <spam>facebook</spam>
+                    </div>
+                
+                </div>
+              
+                
+                <form class="inputs-container">
+                    <input class= "input" type="text" placeholder="Username">
+                    <input class= "input" type="password" placeholder="Password">
+                    <p>¿Olvidó su contraseña? <span class="span"> clip aquí</span></p>
+                    <button class="btn-s">iniciar sesión</button>
+                    <p>¿No tienes una cuenta? <span class="span">registrarse</span></p>
+                </form>
+                
+            </div>
+            <div class="popup-img" id="popup-img">
+                <img class="image-container" src="../img-login/casa2.jpg" alt="login">
+                <a href="#" class="btn-cerrar-popup" id="btn-cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACABA INICIO DE SESIÓN -->
+
+    <header>
+      <div class="icon__menu" id="btn-open">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <div class="menu-header">
+        <a href="#" class="carrito">
+          <i class="bx bx-cart"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/?hl=es"
+          target="_blank"
+          class="red-social"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/Creatur-103796545363660/"
+          target="_blank"
+          class="red-social"
+        >
+          <i class="bx bxl-facebook-circle"></i>
+        </a>
+
+        <a href="#" id="user-icon-open">Iniciar Sesión</a>
+        <a href="#">Registrarse</a>
+      </div>
+    </header>
+
+    <!-- Inicio de side menu -->
+
+    <div class="menu__side" id="menu_side">
+      <div class="logo-creatur">
+        <a href="../index.html">
+          <div class="option">
+            <img src="../img/logo-creatur.svg" alt="" />
+            <h4 class="creatur">Creatur</h4>
+          </div>
+        </a>
+      </div>
+
+      <div class="option__menu">
+        <!-- Icono de inicio -->
+        <a href="../index.html">
+          <div class="option">
+            <i class="bx bx-home"></i>
+            <h4>Inicio</h4>
+          </div>
+        </a>
+
+        <!-- Icono de productos -->
+        <a href="productos.html">
+          <div class="option">
+            <i class="bx bx-store"></i>
+            <h4>Productos</h4>
+          </div>
+        </a>
+
+        <!-- Icono de servicios -->
+        <a href="servicios.html">
+          <div class="option">
+            <i class="bx bx-task"></i>
+            <h4>Servicios</h4>
+          </div>
+        </a>
+
+        <!-- Icono de portafolio -->
+        <a href="portafolio.html" class="select">
+          <div class="option">
+            <i class="bx bx-briefcase-alt"></i>
+            <h4>Portafolio</h4>
+          </div>
+        </a>
+
+        <a href="nosotros.html">
+          <div class="option">
+            <i class="bx bxs-group"></i>
+            <h4>Nosotros</h4>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="option ayuda" id="abrir-ayuda">
+            <i class="bx bx-help-circle"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Fin de side menu -->
+
+
+     <!-- INICIO BOT DE AYUDA -->
+
+     <div class="ayuda2" id="ayuda2">
+
+        <div class="header-ayuda">
+            <h3>CREATUR</h3>
+            <a href="#" class="cerrar-ayuda" id="cerrar-ayuda">
+                <i class='bx bx-x'></i>
+            </a>
+        </div>
+
+        <div class="comentarios-ayuda">
+            <h5>Creatur Bot.</h5>
+            <p class="cm-1">Hola, bienvenido a Creatur</p>
+            <p class="cm-2">En estos momentos nuestro Bot no esta en función.</p>
+            <p class="cm-3">Muy pronto estara disponible. 🙋‍♂️</p>
+        </div>
+
+        <div class="comentario-ayuda">
+            <input type="text" placeholder="Escriba su pregunta aquí">
+        </div>
+
+    </div>
+
+    <!-- FIN BOT DE AYUDA -->
+
+    <div class="cuerpo">
+      <div class="portafolio">
+        <h2 data-text="Portafolio...">Portafolio...</h2>
+        <p>
+            Bienvenido! en este apartado puedes ver algunos de nuestros trabajos realizados, enfocados en el área de diseño 3D, realizado en los diferentes programas de diseño 3D que existen: blender, MagicaVolxel, Maya, etc. 
+        </p>
+
+        <div class="movie">
+            <img src="../img/img-portafolio/Isla.png" alt="img">
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="title-trabajos">
+        <h3><span>Trabajos</span> Realizados</h3>
+      </div>
+
+      <div class="trabajos">
+        
+
+         
+<!-- partial:index.partial.html -->
+<div class="trip-detail-gallery dragscroll" id="lightgallery">
+
+
+  <div class="gallery_item1" data-src="../img/img-productos/12.guerrero/guerrero-1.jpg">
+      <img src="../img/img-productos/12.guerrero/guerrero-1.jpg">
+  </div>
+  <div class="gallery_item2" data-src="../img/img-productos/14.lagarto/lagartov (1).png">
+      <img src="../img/img-productos/14.lagarto/lagartov (1).png">
+  </div>
+  <div class="gallery_item3" data-src="../img/img-productos/15.isla-calavera/isla-calavera-2.png">
+      <img src="../img/img-productos/15.isla-calavera/isla-calavera-2.png">
+  </div>
+  <div class="gallery_item4" data-src="../img/img-productos/3.casa-en-el campo/casa-campo-2.png">
+      <img src="../img/img-productos/3.casa-en-el campo/casa-campo-2.png">
+  </div>
+  <div class="gallery_item5" data-src="../img/img-productos/6.volcan/volcan-2.png">
+      <img src="../img/img-productos/6.volcan/volcan-2.png">
+  </div>
+
+  <div class="gallery_item6" data-src="../img/img-productos/6.volcan/volcan-1.png">
+    <img src="../img/img-productos/6.volcan/volcan-1.png">
+</div>
+
+<div class="gallery_item7" data-src="../img/img-productos/12.guerrero/guerrero-3.jpg">
+  <img src="../img/img-productos/12.guerrero/guerrero-3.jpg">
+</div>
+
+<div class="gallery_item8" data-src="../img/img-productos/4.arboles-otoño/arboles-otoñales-1.png">
+  <img src="../img/img-productos/4.arboles-otoño/arboles-otoñales-1.png">
+</div>
+
+
+</div>
+<!-- partial -->
+
+
+      </div>
+    </div>
+
+
+
+    
+    <!-- FOOTER INICIO -->
+    <div class="footer">
+    
+      
+    
+      <div class="col">
+        <h1 class="copy">©Creatur 2021 </h1>
+      </div>
+
+      <div class="col">
+        <h1>SECCIÓNES</h1>
+        <ul>
+          <li>Descargas gratis</li>
+          <li>Low poly</li>
+          <li>voxel art</li>
+          <li>Diseño 3d</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1>INFORMACIÓN</h1>
+        <ul>
+          <li>Términos de servicio</li>
+          <li>Política de privacidad</li>
+          <li>Promociones</li>
+          <li>Ayuda</li>
+        </ul>
+      </div>
+
+      <div class="col social">
+        
+        <ul>
+          <li>
+            <i class='bx bxl-facebook-circle'></i>
+          </li>
+          <li>
+            <i class='bx bxl-instagram-alt' ></i>
+          </li>
+          <li>
+            <i class='bx bxl-github'></i>
+          </li>
+        </ul>
+      </div>
+    <!-- <div class="clearfix"></div> -->
+    
+    </div>
+    <!-- FIN OF FOOTER -->
+
+
+
+    
+
+    <script src="../js/menu.js"></script>
+
+
+    <script src='https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js'></script><script  src="../js/porfafolio.js"></script>
+
+
+    <script src='../js/ayuda.js'></script>
+    <script src='../js/iniciar-sesion.js'></script>
+    
+
+  </body>
+</html>
+
